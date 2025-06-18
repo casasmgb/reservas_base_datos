@@ -3,7 +3,7 @@
 CAUTION: Do not modify this file unless you know what you are doing.
  Unexpected results may occur if the code is changed deliberately.
 -->
-<dbmodel pgmodeler-ver="1.0.3" use-changelog="false" last-position="22,0" last-zoom="0.75" max-obj-count="28"
+<dbmodel pgmodeler-ver="1.0.3" use-changelog="false" last-position="26,0" last-zoom="0.75" max-obj-count="28"
 	 default-schema="public" default-owner="postgres"
 	 layers="Default layer"
 	 active-layers="0"
@@ -19,6 +19,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 </role>
 
 <database name="db_reservas" is-template="false" allow-conns="true">
+	<role name="usr_reservas"/>
 </database>
 
 <schema name="public" layers="0" fill-color="#e1e1e1" sql-disabled="true">
@@ -43,7 +44,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	<schema name="parametricas"/>
 	<role name="usr_reservas"/>
 	<comment> <![CDATA[Esta tabla controla todos los estados de los registros en el sistema.]]> </comment>
-	<position x="599.961" y="103.823"/>
+	<position x="601.294" y="103.823"/>
 	<column name="est_id" not-null="true">
 		<type name="smallint" length="0"/>
 		<comment> <![CDATA[identificador de la tabla]]> </comment>
@@ -73,7 +74,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	<schema name="autenticacion"/>
 	<role name="usr_reservas"/>
 	<comment> <![CDATA[Es la tabla de los usuarios]]> </comment>
-	<position x="144.215" y="429.333"/>
+	<position x="144.215" y="430.666"/>
 	<column name="usu_id" not-null="true">
 		<type name="serial" length="0"/>
 		<comment> <![CDATA[Identificador de tabla]]> </comment>
@@ -180,7 +181,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	<schema name="autenticacion"/>
 	<role name="usr_reservas"/>
 	<comment> <![CDATA[Esta determina que los roles que tienen los usuarios]]> </comment>
-	<position x="377.726" y="231.255"/>
+	<position x="377.726" y="232.588"/>
 	<column name="usurol_id" not-null="true">
 		<type name="serial" length="0"/>
 		<comment> <![CDATA[Identificador de tabla]]> </comment>
@@ -230,7 +231,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	<schema name="reservas"/>
 	<role name="usr_reservas"/>
 	<comment> <![CDATA[Tabla para regsitrar a todas las personas del sistema]]> </comment>
-	<position x="603.392" y="474.176"/>
+	<position x="603.392" y="475.509"/>
 	<column name="per_id" not-null="true">
 		<type name="serial" length="0"/>
 		<comment> <![CDATA[Identificador de tabla]]> </comment>
@@ -345,7 +346,7 @@ CAUTION: Do not modify this file unless you know what you are doing.
 	<schema name="parametricas"/>
 	<role name="usr_reservas"/>
 	<comment> <![CDATA[Tabla parametrica para registrar las especialidades]]> </comment>
-	<position x="1476.8" y="67.238"/>
+	<position x="1502.13" y="69.9047"/>
 	<column name="esp_id" not-null="true">
 		<type name="smallint" length="0"/>
 		<comment> <![CDATA[Identificador de tabla]]> </comment>

@@ -20,7 +20,8 @@ COMMENT ON ROLE usr_reservas IS E'Es el usuario administrador de la base de dato
 -- 
 -- object: db_reservas | type: DATABASE --
 -- DROP DATABASE IF EXISTS db_reservas;
-CREATE DATABASE db_reservas;
+CREATE DATABASE db_reservas
+	OWNER = usr_reservas;
 -- ddl-end --
 
 
